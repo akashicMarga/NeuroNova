@@ -1,0 +1,10 @@
+[package]
+name = "quantum_simulator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+approx = "0.5.1"
+nalgebra = "0.31"
+rand = "0.8.5"
+rayon = "1.10.0"
