@@ -1,0 +1,23 @@
+[package]
+name = "rl_algorithms"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+candle = { git = "https://github.com/huggingface/candle", package = "candle-core" }
+candle-nn = { git = "https://github.com/huggingface/candle" }
+clap = { version = "4.4", features = ["derive"] }
+pyo3 = { version = "0.22.0", features = [
+  "auto-initialize",
+  "abi3-py311",
+], optional = true }
+rand = "0.8.5"
+
+
+[[bin]]
+name = "rl-cli"
+path = "src/main.rs"
+
+[lib]
+name = "rl"
+path = "src/lib.rs"
