@@ -1,0 +1,13 @@
+[package]
+name = "env_rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rapier2d = { version = "0.17.0", features = ["simd-stable"] }
+nalgebra = "0.32.3"                                           # for vectors and matrices
+rand = "0.8.5"                                                # for random initialization
+bevy = "0.11"
+bevy_rapier2d = "0.22"
+# Add this for text rendering
+bevy_text = "0.11"
